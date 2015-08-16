@@ -7,11 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= link_to "About", pages_about_path %>
-<%= link_to "Contact", pages_contact_path %>
   
-<%= yield %>
+<%= render 'layouts/navbar' %>
 
+<div class="container container-fluid">
+  <%= yield %>
+</div>
+  
 </body>
 </html>
