@@ -7,12 +7,14 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   resources :listings do
-    resources :orders
+    resources :orders, only: [:new, :create]
   end
   
   get "pages/about"
   get "pages/contact"
   get 'seller' => "listings#seller"
+  get 'sales' => "orders#sales"
+  get 'purchases' => "orders#purchases"
   
   root 'listings#index'
 
