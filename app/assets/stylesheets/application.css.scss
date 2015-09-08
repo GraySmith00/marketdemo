@@ -17,6 +17,38 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+html,
+body { height: 100% }
+
+body {
+  display: table;
+  width: 100%;
+  font-family: 'tk-source-sans-pro', 'Raleway', Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.alert {
+  margin-bottom: 0px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.jumbotron {
+  background-image: url('Wallpaper_39.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  color: white;
+  font-family: sans-serif;
+  text-shadow: black 0.3em 0.3em 0.3em;
+  text-align: center;
+  h1 {
+    margin-top: -10px;
+  }
+}
+
 body {
   background-color: #F5F5F1;
   color: #333333;
@@ -76,4 +108,9 @@ body {
 
 /* INDEX PAGE
 =================================== */
+
+
+/* MEDIA QUERIES
+==================================== */
+
 
